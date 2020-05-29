@@ -1,7 +1,11 @@
 custom-ml-pipelines
 ==============================
 
-Different apporaches to building ML pipelines
+This repo explores different apporaches to building ML pipelines:
+
+    - Standard Sckit-Learn Pipeline.
+    - Complete Custom pipeline not relying any specific packages for building workflows.
+    - Databolt/Luigi pipeline based on d6tflow workflow structure.
 
 Project Organization
 ------------
