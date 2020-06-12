@@ -2,8 +2,9 @@ import attr
 import collections
 import numpy as np
 import os
-from pickle import dump, load
 import pandas as pd
+from pickle import dump, load
+
 
 from sklearn.ensemble import RandomForestRegressor
 

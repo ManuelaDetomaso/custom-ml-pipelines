@@ -1,7 +1,7 @@
 import itertools
 import numpy as np
-from pickle import load
 import pandas as pd
+from pickle import load
 
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.ensemble import RandomForestRegressor
