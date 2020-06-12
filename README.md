@@ -16,7 +16,7 @@ Project Organization
     ├── data
     │   ├── input          <- Input/raw data
     │   ├── processed      <- Databolt processed files
-    │   └── output         <- other pipelines' output files and model artifacts
+    │   └── outputs        <- other pipelines' output files and model artifacts
     |       ├──model_artifacts
     |       └── partitions
     │
