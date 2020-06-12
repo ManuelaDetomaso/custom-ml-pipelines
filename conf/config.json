@@ -1,0 +1,81 @@
+{
+    "INPUT_CONFIG":
+        {
+            "HOUSING_URL" : "https://raw.githubusercontent.com/ageron/handson-ml2/master/datasets/housing/housing.tgz",
+            "FETCH_DATA": "True",
+            "INPUT_PATH" : "data/input",
+            "INPUT_FILENAME" : "housing.csv"
+        },
+    "OUTPUT_CONFIG": 
+        {
+            "OUTPUT_PATH": "data/outputs",
+            "PARTITIONS_PATH": "data/outputs/partitions",
+            "ARTIFACTS_PATH": "data/outputs/model_artifacts",
+            "NUMFEATURES_FILENAME": "numerical_features.csv",
+            "ENRICHEDFEATURES_FILENAME": "enriched_numerical_features.csv",
+            "IMPUTED_NUMFEATURES_FILENAME": "imputed_numerical_features.csv",
+            "SCALED_NUMFEATURES_FILENAME": "scaled_numerical_features.csv",
+            "SCALER_FILENAME": "numerical_scaler.pkl",
+            "CATFEATURES_FILENAME": "categorical_features.csv",
+            "IMPUTED_CATFEATURES_FILENAME": "imputed_categorical_features.csv",
+            "ENCODED_CATFEATURES_FILENAME": "encoded_categorical_features.csv",
+            "ALL_PROCESSED_FILENAME": "all_processed.csv",
+            "TRAINSET_FILENAME" : "train_set.csv",
+            "TRAINSET_TARGET_FILENAME" : "train_target.csv",
+            "TESTSET_FILENAME" : "test_set.csv",
+            "TESTSET_TARGET_FILENAME" : "test_target.csv",
+            "MODEL_FILENAME": "trained_housing_model.pkl",
+            "PREDICTIONS_FILENAME": "predictions.csv",
+            "RESULTS_FILENAME": "results.csv"
+        },
+    "TRAINING_CONFIG": 
+        {
+            "PARAMS_GRID": 
+                {
+                    "n_estimators": [100],
+                    "max_features": [10]
+                },
+            "CV_FOLDS":5,
+            "SCORING_METRIC":"neg_mean_squared_error"
+
+        },
+    "TESTING_CONFIG":
+        {
+            "stratified": "True",
+            "strata_var": "median_income",
+            "bins": [0.0, 1.5, 3.0, 4.5, 6.0, "np.inf"],
+            "labels": [1, 2, 3, 4, 5],
+            "test_size": 0.2,
+            "random_state": 42
+        },
+    "VARIABLES":
+        {
+            "longitude": "float64",
+            "latitude": "float64",
+            "housing_median_age": "float64",
+            "total_rooms": "float64",
+            "total_bedrooms": "float64",
+            "population": "float64",
+            "households": "float64",
+            "median_income": "float64",
+            "ocean_proximity": "object"
+        },
+    "TARGET": "median_house_value",
+    "CATEGORICAL_VARS_LABELS": 
+        {
+            "ocean_proximity": ["<1H OCEAN", "INLAND", "ISLAND", "NEAR BAY", "NEAR OCEAN"]
+        },
+    "NUMERICAL_VARS_MEDIANS": 
+        {
+            "longitude": -118.49,
+            "latitude": 34.26,
+            "housing_median_age": 29.0,
+            "total_rooms": 2127.0,
+            "total_bedrooms": 435.0,
+            "population": 1166.0,
+            "households": 409.0,
+            "median_income": 3.5348
+        },
+    "COMBINED_VARIABLES":["total_rooms", "total_bedrooms", "population", "households"],
+    "ADD_BEDROOMS_PER_ROOM": "True"
+}
