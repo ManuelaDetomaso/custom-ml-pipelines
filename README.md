@@ -11,45 +11,27 @@ Project Organization
 ------------
 
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
+    ├── conf               <- Folder hosting the configurations stored in the config.json
     ├── data
     │   ├── input          <- Input/raw data
-    │   ├── databolt_output<- Intermediate data that has been transformed.
-    │   └── output         <- Processed files, partitoned data and model artifacts
+    │   ├── processed      <- Databolt processed files
+    │   └── output         <- other pipelines' output files and model artifacts
     |       ├──model_artifacts
     |       └── partitions
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- training and predictions workflows
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-md-custom-ml-pipeline`.
+    ├── notebooks          <- Jupyter notebooks with examples of how to use alternative pipeline structures
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── models         <- Scripts to create training pipelines to get models and then use 
-    |   |                     trained models to make predictions
-    │   │   │   
-    |   |   ├── sklearn_predict_model.py
-    │   │   ├── sklearn_train_model.py
-    |   |   ├── databolt_predict_model.py
-    │   │   ├── databolt_train_model.py
-    │   │   ├── custom_predict_model.py
-    │   │   └── custom_train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
+    |   ├── config.py
+    │   ├── input_collector.py
+    │   ├── custom_pipeline_modeler.py
+    |   ├── databolt_pipeline_modeler.py
+    │   └── sklearn_pipeline_modeler.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
