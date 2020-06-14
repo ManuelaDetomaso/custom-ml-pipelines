@@ -57,7 +57,7 @@ class TaskPartitionData(d6tflow.tasks.TaskCSVPandas):
             train_set, test_set, train_target, test_target = (
                 CustomTrainTestSplit(**self.testing_kwargs).transform(housing_data)
             )
-            # Svae partitions as Task output
+            # Save partitions as Task output
             self.save(
                 {
                  "train_set":train_set, 
