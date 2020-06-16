@@ -9,7 +9,7 @@ This repo explores different apporaches to building ML pipelines:
     
 The Use Case
 ------------
-Pipeline are built to create a ML model to predict the Median Price of houses in California ("median_house_value") given the following input variables: "longitude", "latitude", "housing_median_age", "total_rooms", "total_bedrooms", "population", "households", "median_income", "ocean_proximity".
+Pipelines are built to create a machine learning model to predict the Median Price of houses in California ("median_house_value") given the following input variables: "longitude", "latitude", "housing_median_age", "total_rooms", "total_bedrooms", "population", "households", "median_income", "ocean_proximity".
 
 Project Organization
 ------------
