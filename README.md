@@ -21,7 +21,7 @@ Project Organization
     │   ├── input          <- Input/raw data
     │   ├── processed      <- Databolt processed files
     │   └── outputs        <- other pipelines' output files and model artifacts
-    |       ├──model_artifacts
+    |       ├── model_artifacts
     |       └── partitions
     │
     ├── notebooks          <- Jupyter notebooks with examples of how to use alternative pipeline structures
