@@ -6,6 +6,10 @@ This repo explores different apporaches to building ML pipelines:
     - Tipical Scikit-Learn Pipeline.
     - Complete Custom pipeline not relying any specific packages for building workflows.
     - Databolt/Luigi pipeline based on d6tflow workflow structure.
+    
+The Use Case
+------------
+Pipeline are built to create a ML model to predict the Median Price of houses in California ("median_house_value") given the following input variables: "longitude", "latitude", "housing_median_age", "total_rooms", "total_bedrooms", "population", "households", "median_income", "ocean_proximity".
 
 Project Organization
 ------------
