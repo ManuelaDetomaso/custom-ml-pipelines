@@ -32,7 +32,7 @@
         {
             "PARAMS_GRID": 
                 {
-                    "n_estimators": [100],
+                    "n_estimators": [100, 200],
                     "max_features": [10]
                 },
             "CV_FOLDS":5,
