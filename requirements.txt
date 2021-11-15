@@ -34,7 +34,7 @@ pandas==1.0.4
 pandocfilters==1.4.2
 parso==0.7.0
 pickleshare==0.7.5
-pip==20.1.1
+pip==21.1
 prometheus-client==0.5.0
 prompt-toolkit==3.0.5
 pyarrow==0.17.1
